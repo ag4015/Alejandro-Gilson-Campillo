@@ -69,7 +69,7 @@ p{
 	.myName{
 		color: #2a2c5a;
 		font-weight: bold;
-		width: 12vw;
+		width: 25vw;
 		align-self: center;
 		margin-left: 2vw;
 	}
@@ -88,6 +88,12 @@ p{
 		text-decoration: none;
 		color: #2a2c5a;
 		font-weight: bold;
+	}
+}
+@media only screen and (max-width: 800px) {
+	.myName{
+		display: none;
+		background-color: red;
 	}
 }
 /*
