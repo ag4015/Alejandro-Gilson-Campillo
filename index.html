@@ -4,21 +4,61 @@
 	<title>Alejandro Gilson Campillo</title>
 	<link href="styles/style.css" rel="stylesheet" type="text/css">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Alegreya|Amiri|EB+Garamond" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Nunito|Open+Sans|Work+Sans" rel="stylesheet">
+	<style type="text/css">
+	@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+
+	/* fontawesome */
+	[class*="fontawesome-"]:before {
+  		font-family: 'FontAwesome', sans-serif;
+	}
+	</style>
 </head>
 <body>
 	<div id = "title">
-		<img src="images/garden.jpg" id="garden">
-		<div><h2>Hello I'm</h2></div>
-		<h1>Alejandro Gilson Campillo</h1>
+		<figure>
+			<h2>Hello I'm</h2>
+			<h1>Alejandro Gilson Campillo</h1>
+			<img src="images/garden.jpg" id="garden">
+		</figure>
+	</div>
+	<div class="aboutSection">
+		<figure id="myFrame">
+			<img src="images/photoOfMe.jpg" alt="Alex photo" id="photoOfMe">
+		</figure>
+		<div id="textAboutMe">
+			<h2>About me</h2>
+			<p>I'm Alejandro Gilson Campillo. I designed this site so you can get to know me on a personal level. My career, my portfolio, my hobbies and much more.</p>
+			<p>First things first, I am a student at Imperial College London (ICL) studying an MEng in Electrical and Electronic Engineering. I was born in Madrid but graduated from secondary school in Barcelona.</p>
+			<p>I am specialized in the development of software for demanding problems that require efficient solutions. I have a broad experience in the area of signal processing, machine learning and general purpose software. </p>
+			<p>If, after all, I happen to have caught your interest, don't hesitate to contact me for any opportunities, ideas or just a coffee and a chat. For more details, my CV is available for download.</p>
+			<button id="downloadCV">Download CV</button>
+			<button id="contactButton">Contact</button>
+		</div>
+	</div>
+		<div class="myWorkSection">
+		<h2>My Work</h2>
+		<h4><span class="fontawesome-quote-left" id = "leftQuote"></span>Pleasure in the job puts perfection in the work.<span class="fontawesome-quote-right" id="rightQuote"></span></h4>
+		<h4 id="Jean">Jean Paul Sartre</h4>
+		<ul id="listProjects1">
+			<li>EEBug</li>
+			<li>32 bit FP multiplier</li>
+			<li>Articulated glove</li>
+		</ul>
+		<ul id="listProjects2">
+			<li>EMC test</li>
+			<li>Intelligent denoiser</li>
+			<li>Automated fatigue test</li>
+		</ul>
 	</div>
 	<div id = "topbar">
 		<ul>
-			<li><a href="#">About</a></li>
 			<li><a href="#">Projects</a></li>
 			<li><a href="#">Timeline</a></li>
 			<li><a href="#">Contact</a></li>
+			<li><a href="#">About</a></li>
 		</ul>
-	</div>
-	<button id="myName">Alejandro Gilson Campillo</button>	
+	</div>	
 </body>
 </html>
