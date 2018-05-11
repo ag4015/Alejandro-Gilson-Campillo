@@ -33,7 +33,7 @@ p{
 	padding-bottom: 0px;
 }
 
-#title h1{ 
+#title h1{
 	position: absolute;
 	bottom: 50%;
 	width: 100%;
@@ -54,6 +54,10 @@ p{
 
 #topbar{
 	position: fixed;
+	display: flex;
+	flex-direction: row;
+	justify-content:space-between;
+	width: 100%;
 	background-color: white;
 	opacity: 0.8;
 	top: 0px;
@@ -61,27 +65,30 @@ p{
 	right: 0px;
 	height: 60px;
 }
-
-#topbar ul{
-	position: absolute;
-	top: 0px;
-	right: 0px;
-	margin-top: 15px;
-	margin-right: 10px;
-	padding-left: 0px;
-}
-#topbar ul li{
-	display: inline;
-	float: right;
-	margin-right: 5vw;
-	top: 0px;
-}
-#topbar ul li a{
-	text-decoration: none;
-	margin: 20px 20px 20px 20px;
-	padding: 5px;
-	color: #2a2c5a;
-	font-weight: bold;
+@media only screen and (min-width: 481px){
+	.myName{
+		color: #2a2c5a;
+		font-weight: bold;
+		width: 12vw;
+		align-self: center;
+		margin-left: 2vw;
+	}
+	#topbar ul{
+		display: flex;
+		flex-direction: row;
+		justify-content:flex-end;
+		align-self: center;
+		list-style-type: none;
+		width: 100%;
+	}
+	#topbar ul li{
+		margin-right: 4vw;
+	}
+	#topbar ul li a{
+		text-decoration: none;
+		color: #2a2c5a;
+		font-weight: bold;
+	}
 }
 /*
 @media screen and (max-width: 1000px){
