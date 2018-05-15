@@ -63,14 +63,29 @@ p{
 	right: 0px;
 	height: 10vh;
 }
+#topbarMobile{
+	position: fixed;
+	display: flex;
+	flex-direction: row;
+	justify-content:space-between;
+  align-items: center;
+  padding-left: 8vw;
+	width: 100%;
+	background-color: white;
+	opacity: 0.8;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	height: 10vh;
+}
 
 /***************Big Screen**************/
 @media only screen and (min-width: 650px) {
-	.fontawesome-reorder{
+	#topbarMobile{
 		visibility: hidden;
 	}
-  .fontawesome-font{
-    visibility: hidden;
+  #topbar{
+    visibility: visible;
   }
 	.myName{
 		color: #2a2c5a;
@@ -99,8 +114,11 @@ p{
 
 /*************Small Screen***************/
 @media only screen and (max-width: 649px){
-  #topbar ul{
+  #topbar{
     visibility: hidden;
+  }
+  #topbarMobile{
+    visibility: visible;
   }
   #title h1{
     font-size: 30px;
