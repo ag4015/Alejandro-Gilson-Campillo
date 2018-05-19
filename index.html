@@ -33,30 +33,74 @@
 		<figure id="myFrame">
 			<img src="images/photoOfMe.jpg" alt="Alex photo" id="photoOfMe">
 		</figure>
-		<div id="textAboutMe">
-			<h2>About me</h2>
-			<p>I'm Alejandro Gilson Campillo. I designed this site so you can get to know me on a personal level. My career, my portfolio, my hobbies and much more.</p>
-			<p>First things first, I am a student at Imperial College London (ICL) studying an MEng in Electrical and Electronic Engineering. I was born in Madrid but graduated from secondary school in Barcelona.</p>
-			<p>I am specialized in the development of software for demanding problems that require efficient solutions. I have a broad experience in the area of signal processing, machine learning and general purpose software. </p>
-			<p>If, after all, I happen to have caught your interest, don't hesitate to contact me for any opportunities, ideas or just a coffee and a chat. For more details, my CV is available for download.</p>
-			<button id="downloadCV">Download CV</button>
-			<button id="contactButton">Contact</button>
+		<div id="aboutRight">
+			<div id="textAboutMe">
+				<h2>About me</h2>
+				<p>I'm Alejandro Gilson Campillo. I designed this site so you can get to know me on a personal level. My career, my portfolio, my hobbies and much more.</p>
+				<p>I am a student at Imperial College London (ICL) studying an MEng in Electrical and Electronic Engineering. I was born in Madrid but graduated from secondary school in Barcelona.
+				I am specialized in the development of software for demanding problems that require efficient solutions. I have a broad experience in the area of signal processing, machine learning and general purpose software. </p>
+				<p>If, after all, I happen to have caught your interest, don't hesitate to contact me for any opportunities, ideas or just a coffee and a chat. For more details, my CV is available for download.</p>
+			</div>
+			<div id="buttonsAbout">
+				<button id="downloadCV">Download CV</button>
+				<button id="contactButton">Contact</button>
+			</div>
 		</div>
 	</div>
-		<div class="myWorkSection">
-		<h2>My Work</h2>
-		<h4><span class="fontawesome-quote-left" id = "leftQuote"></span>Pleasure in the job puts perfection in the work.<span class="fontawesome-quote-right" id="rightQuote"></span></h4>
-		<h4 id="Jean">Jean Paul Sartre</h4>
-		<ul id="listProjects1">
-			<li>EEBug</li>
-			<li>32 bit FP multiplier</li>
-			<li>Articulated glove</li>
-		</ul>
-		<ul id="listProjects2">
-			<li>EMC test</li>
-			<li>Intelligent denoiser</li>
-			<li>Automated fatigue test</li>
-		</ul>
+	<div class="myWorkSection">
+		<div class="upperWork">
+			<h2>My Projects</h2>
+			<h4><span class="fontawesome-quote-left" id = "leftQuote"></span>
+				Pleasure in the job puts perfection in the work.
+				<span class="fontawesome-quote-right" id="rightQuote"></span>
+			</h4>
+			<h4 id="Jean">Jean Paul Sartre</h4>
+		</div>
+		<div class="lowerWork">
+			<div class="projects1">
+				<div class="project-1">
+					<span class="fontawesome-bolt"></span>
+					<h5>EEBug</h5>
+					<p>Intelligent motored device that follows a line with
+						 the use of an ATtiny microprocessor.</p>
+					</div>
+				<div class="project-2">
+					<span class="fontawesome-desktop"></span>
+					<h5>32 bit FP multiplier</h5>
+					<p> ARM assembly code that computes the multiplication of two 32-bit
+						floating point numbers.
+					</p>
+				</div>
+				<div class="project-3">
+					<span class="fontawesome-medkit"></span>
+					<h5>Articulated glove</h5>
+					<p>Articulated glove for people with hand disabilities. Device to aid
+						patients with hand muscle weakness.
+					</p>
+				</div>
+			</div>
+			<div class="projects2">
+				<div class="project-4">
+					<span class="fontawesome-rss"></span>
+					<h5>EMC test</h5>
+					<p>
+						Development of an automated electromagnetic susceptibility test for Airbus
+					</p>
+				</div>
+				<div class="project-5">
+					<span class="fontawesome-bullhorn"><span class="fontawesome-ban-circle"></span></span>
+					<h5>Intelligent denoiser</h5>
+					<p>Intelligent DSP algorithm that analyzes audio and reduces
+						 undesired background noise</p>
+				</div>
+				<div class="project-6">
+					<span class="fontawesome-cogs"></span>
+					<h5>Automated fatigue test</h5>
+					<p>Development of an automated fatigue test device for FAC Technologies
+						with the use of computer vision and machine learning.
+				</div>
+			</div>
+		</div>
 	</div>
 	<div id = "topbar">
 		<h3 class="myName">Alex Gilson </h3>
@@ -75,4 +119,5 @@
 	</div>
 </body>
 <script src="scripts/height.js" type="text/javascript"></script>
+<script src="scripts/projectSize.js" type="text/javascript"></script>
 </html>

@@ -12,7 +12,6 @@ p{
 	font-size: 20px;
 }
 
-
 #title{
 	position: relative;
 	width: 100vw;
@@ -111,6 +110,13 @@ p{
 		color: #2a2c5a;
 		font-weight: bold;
 	}
+	.aboutSection figure{
+		max-width: 50%;
+	}
+	#aboutRight{
+		max-width: 50%;
+	}
+
 }
 
 /*************Small Screen***************/
@@ -127,7 +133,12 @@ p{
   #title h2 {
     font-size: 20px;
   }
-  .aboutSection h
+	.aboutSection figure{
+		max-width: 70%;
+	}
+	#aboutRight{
+		max-width: 70%;
+	}
 }
 
 .aboutSection{
@@ -138,12 +149,18 @@ p{
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
+	margin-top: 3vh;
+	margin-bottom: 7vh;
 	background-color: white;
 	font-size: 20px;
 	font-family: 'Montserrat', sans-serif;
 }
-.aboutSection figure{
-  max-width: 70%;
+#aboutRight{
+	display: flex;
+	flex-direction: column;
+	justify-content:flex-start;
+	align-items: center;
+	width: auto;
 }
 #photoOfMe{
 	max-width: 100%;
@@ -151,33 +168,40 @@ p{
 	border-color: white;
 	border-radius: 20px;
 }
-.aboutSection div{
-  max-width: 70%;
+#textAboutMe{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 .aboutSection h2{
 	font-family: Alegreya, serif;
 }
+#buttonsAbout{
+	display: flex;
+	width: 100%;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
 .aboutSection button{
 	box-shadow: none;
 	border: solid;
-	margin-top: 2vh;
-	width: 11vw;
+	width: auto;
 	font-size: 18px;
 	font-family: 'Montserrat', sans-serif;
 	cursor: pointer;
 	font-weight: 500;
 }
 #downloadCV{
-	height: 4.5vw;
-	margin-left: 25%;
-	margin-right: 4%;
+	height: 7vh;
 	color: white;
+	margin-right: 2vw;
 	background-color: #22959b;
 	border: solid white;
 	border-radius: 10px;
 }
 #contactButton{
-	height: 4.25vw;
+	height: 6.5vh;
 	color: black;
 	background-color: white;
 	border: solid #22959b;
@@ -185,51 +209,118 @@ p{
 }
 .myWorkSection{
 	position: relative;
-	height: 600px;
-	float: right;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
 	width: 100%;
 	background-color: rgb(240,240,240);
-	margin-top: 7vh;
 }
-.myWorkSection h2{
+.upperWork{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	margin-top: 2vh;
+}
+.upperWork h2{
 	text-align: center;
 }
-.myWorkSection h4{
+.upperWork h4{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
 	font-style: italic;
 	font-size: 15px;
 	text-align: center;
 }
-.myWorkSection #leftQuote{
+.upperWork #leftQuote{
 	 color:  #EC4758;
 	 margin-right: 1vw;
 }
-.myWorkSection #rightQuote{
+.upperWork #rightQuote{
 	 color:  #EC4758;
 	 margin-left: 1vw;
 }
 #Jean{
-	margin-top: 10px;
+	margin-top: 5px;
 }
-.myWorkSection ul{
-	position: relative;
-	float: left;
-f}
-#listProjects1{
-	display: table;
-	position: relative;
-	float: left;
-	background-color: red;
-	width: 75%;
-	margin: 0 auto;
+.lowerWork{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-wrap: wrap;
+	width: 100%;
+	margin-top: 5vh;
 }
-#listProjects2{
-	position: relative;
-	float: left;
-	background-color: blue;
+.projects1{
+	width:100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-wrap: wrap;
 }
-.myWorkSection li{
-	display: inline;
-	text-decoration: none;
+.projects2{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-wrap: wrap;
+	margin-bottom: 10vh;
+}
+[class^="project-"]{
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	margin-bottom: 5vh;
+	box-shadow: 10px 10px 5px Gainsboro;
 	background-color: white;
-	margin: 2vw 5vw 10vw 5vw;
+	cursor: pointer;
+}
+[class^="project-"] h5{
+	margin-top: 1vh;
+	margin-bottom: 1vh;
+}
+[class^="project-"] p{
+	text-align: center;
+	font-style: italic;
+	font-size: 10px;
+	margin-top: 0vh;
+	margin-bottom: 0vh;
+	margin-left: 2vw;
+	margin-right: 2vw;
+}
+.fontawesome-bolt{
+	font-size: 30px;
+	color: #0ba55f;
+}
+.fontawesome-desktop{
+	font-size: 30px;
+	color: #4f77bd;
+}
+.fontawesome-medkit{
+	font-size: 30px;
+	color: #e10531;
+}
+.fontawesome-rss{
+	font-size: 30px;
+	color: #0ba55f;
+}
+.fontawesome-bullhorn{
+	font-size: 30px;
+	color: #4f77bd;
+}
+.fontawesome-ban-circle{
+	font-size: 30px;
+	color: #4f77bd;
+}
+.fontawesome-cogs{
+	font-size: 30px;
+	color: #e10531;
 }
