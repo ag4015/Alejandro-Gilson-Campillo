@@ -116,11 +116,19 @@ p{
 	#aboutRight{
 		max-width: 50%;
 	}
-
+	.wineText{
+		max-width: 45%;
+	}
+	.denoiserSection{
+		height: 500px;
+	}
 }
 
 /*************Small Screen***************/
 @media only screen and (max-width: 649px){
+	.html{
+		font-size: 10px;
+	}
   #topbar{
     visibility: hidden;
   }
@@ -138,6 +146,19 @@ p{
 	}
 	#aboutRight{
 		max-width: 70%;
+	}
+	.eebugFigure{
+		max-width: : 70%;
+	}
+	.wineFigure{
+		max-width: 100%;
+		width: 70%;
+	}
+	.wineText{
+		width: 70%;
+	}
+	.denoiserSection{
+		height: auto;
 	}
 }
 
@@ -258,6 +279,7 @@ p{
 .projects1{
 	width:100%;
 	display: flex;
+	align-self: center;
 	flex-direction: row;
 	justify-content: space-evenly;
 	align-items: center;
@@ -267,6 +289,7 @@ p{
 	width: 100%;
 	display: flex;
 	flex-direction: row;
+	align-self: center;
 	justify-content: space-evenly;
 	align-items: center;
 	flex-wrap: wrap;
@@ -300,9 +323,9 @@ p{
 	font-size: 30px;
 	color: #0ba55f;
 }
-.fontawesome-desktop{
+.fontawesome-glass{
 	font-size: 30px;
-	color: #4f77bd;
+	color: #e10531;
 }
 .fontawesome-medkit{
 	font-size: 30px;
@@ -312,15 +335,148 @@ p{
 	font-size: 30px;
 	color: #0ba55f;
 }
-.fontawesome-bullhorn{
-	font-size: 30px;
-	color: #4f77bd;
-}
-.fontawesome-ban-circle{
+.fontawesome-headphones{
 	font-size: 30px;
 	color: #4f77bd;
 }
 .fontawesome-cogs{
 	font-size: 30px;
-	color: #e10531;
+	color: #4f77bd;
+}
+.eebugSection{
+	width: 100%;
+	height: auto;
+	padding-bottom: 5vh;
+	margin-top: 2vh;
+	padding-top: 2vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	/* background-color: rgba(157, 255, 174, 0.48); */
+	background-color: #8CDD81;
+}
+.eebugContent{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	width: 100%;
+	margin-left: 10vw;
+	margin-right: 10vw;
+}
+.eebugFigure{
+	width: 40%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.eebugImage{
+	max-width: 100%;
+	width: 100%;
+}
+.eebugText{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 68%;
+	margin-top: 5vh;
+}
+.github{
+	display: block;
+	text-align: center;
+	font-size: 20px;
+	height: 7vh;
+	color: black;
+	background-color: #e0db3f;
+	border: solid white;
+	border-radius: 10px;
+	cursor: pointer;
+}
+.wineSection{
+	width: 100%;
+	padding-bottom: 5vh;
+	margin-top: 2vh;
+	padding-top: 2vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.wineContent{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.wineFigure{
+	width: 25%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+#wineImage{
+	max-width: 100%;
+	width: 100%;
+}
+.wineText{
+	width: 68%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 5vh;
+	color: darkred;
+}
+.denoiserSection{
+	width: 100%;
+	padding-bottom: 5vh;
+	margin-top: 2vh;
+	padding-top: 2vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	flex-wrap: nowrap;
+	color: white;
+}
+.denoiserContent{
+	width: 68%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.emcSection{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	flex-wrap: wrap;
+	background-color: rgb(240,240,240);
+}
+.emcContent{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.emcFigure{
+	width: 40%;
+}
+.emcFigure img{
+	max-width: 100%;
+}
+.emcText{
+	width: 50%;
 }

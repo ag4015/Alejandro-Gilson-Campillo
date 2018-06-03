@@ -38,7 +38,8 @@
 				<h2>About me</h2>
 				<p>I'm Alejandro Gilson Campillo. I designed this site so you can get to know me on a personal level. My career, my portfolio, my hobbies and much more.</p>
 				<p>I am a student at Imperial College London (ICL) studying an MEng in Electrical and Electronic Engineering. I was born in Madrid but graduated from secondary school in Barcelona.
-				I am specialized in the development of software for demanding problems that require efficient solutions. I have a broad experience in the area of signal processing, machine learning and general purpose software. </p>
+				I am specialized in the development of hardware and software for demanding problems that require efficient solutions. I have a broad experience
+				in the area of analog and digital systems, signal processing, machine learning and general purpose software. </p>
 				<p>If, after all, I happen to have caught your interest, don't hesitate to contact me for any opportunities, ideas or just a coffee and a chat. For more details, my CV is available for download.</p>
 			</div>
 			<div id="buttonsAbout">
@@ -65,18 +66,17 @@
 						 the use of an ATtiny microprocessor.</p>
 					</div>
 				<div class="project-2">
-					<span class="fontawesome-desktop"></span>
-					<h5>32 bit FP multiplier</h5>
-					<p> ARM assembly code that computes the multiplication of two 32-bit
-						floating point numbers.
+					<span class="fontawesome-glass"></span>
+					<h5>Wine classifier</h5>
+					<p> A machine learning algorithm that grades the quality
+						of portuguese "vinho verde" wine.
 					</p>
 				</div>
 				<div class="project-3">
-					<span class="fontawesome-medkit"></span>
-					<h5>Articulated glove</h5>
-					<p>Articulated glove for people with hand disabilities. Device to aid
-						patients with hand muscle weakness.
-					</p>
+					<span class="fontawesome-headphones"></span>
+					<h5>Intelligent denoiser</h5>
+					<p>Intelligent DSP algorithm that analyzes audio and reduces
+						 undesired background noise</p>
 				</div>
 			</div>
 			<div class="projects2">
@@ -88,10 +88,11 @@
 					</p>
 				</div>
 				<div class="project-5">
-					<span class="fontawesome-bullhorn"><span class="fontawesome-ban-circle"></span></span>
-					<h5>Intelligent denoiser</h5>
-					<p>Intelligent DSP algorithm that analyzes audio and reduces
-						 undesired background noise</p>
+					<span class="fontawesome-medkit"></span>
+					<h5>Articulated glove</h5>
+					<p>Articulated glove for people with hand disabilities. Device to aid
+						patients with hand muscle weakness.
+					</p>
 				</div>
 				<div class="project-6">
 					<span class="fontawesome-cogs"></span>
@@ -100,6 +101,64 @@
 						with the use of computer vision and machine learning.
 				</div>
 			</div>
+		</div>
+	</div>
+	<div class="eebugSection">
+		<h2>EEbug</h2>
+		<div class="eebugContent">
+			<figure class="eebugFigure">
+				<img class="eebugImage" src="images/eebug.png" alt="eebugImage">
+			</figure>
+			<div class="eebugText">
+				<p>
+					This was my first year project as a student. This device uses an infrared
+					emitter and two infrared sensors to detect a painted line on the ground.
+					 The difference in reflection between the background color and the color
+					 of the line determines the position of the device. Finally, a microprocessor
+					uses this information to control the DC motors and follow the line.
+				</p>
+				<button class="github">See on Github</button>
+			</div>
+		</div>
+	</div>
+	<div class="wineSection">
+		<h2>Wine classifier</h2>
+		<div class="wineContent">
+			<figure class="wineFigure">
+				<img id="wineImage" src="images/wineGlass.jpg" alt="wineGlass.jpg">
+			</figure>
+			<div class="wineText">
+				<p>
+				In my third year as a student I developed a machine learning algorithm that could grade from 1 to 10 the quality of "vinho verde" wine from the north of Portugal. I was provided with a large data set of red and white wines that had been graded by the average of three oenologists and my task was to minimize the error. Several properties of the wine were available such as acidity and alcohol percentage.</p>
+
+				<p>After attempting several algorithms such as linear regression, support vector machines and neural networks, the method that introduced the least mean squared error happened to be that of the neural network. For further information, please contact me. </p>
+			</div>
+		</div>
+	</div>
+	<div class="denoiserSection">
+		<style type="text/css">
+			.denoiserSection{
+				background-image: url("images/denoiser.jpg");
+			}
+		</style>
+		<h2>Intelligent denoiser</h2>
+		<div class="denoiserContent">
+			<div class "denoiserText">
+				<p>One of the projects I have been involved in is the development of an intelligent DSP algorithm that reduces the background noise behind speech signals while maintaining the quality of the message. This algorithm is based on the assumption that the speaker will pause talking during a 10 second time period.</p>
+				<p>A Texas Instrument DSP board was programmed in C to compute this algorithm. The program looked for the frequency components with the least magnitude for the last 10 seconds. It then substracted these components from the input signal. Further enhancements were implemented to increase the quality of the signal. For further information, please contact me.
+			</div>
+		</div>
+	</div>
+	<div class="emcSection">
+		<h2>EMC test</h2>
+		<div class="emcContent">
+			<div class="emcFigure">
+				<img src="images/emcWindows.jpg" alt="emcWindows.jpg">
+			</div>
+			<div class="emcText">
+				<p>As an intern at Airbus Earlier I developed an electromagnetic susceptibility test automated test software for Airbus. Susceptibility tests measure the vulnerability of the device to electro-magnetic emissions.</p>
+				<p>The software controlled a wide range of equipment such as antennas, signal generators, amplifiers and field probes. It generated the desired electric field for a specific frequency range in an anechoic chamber and returned measured data. I also developed a Win32 user interface to make the program easier to use.</p>
+				</div>
 		</div>
 	</div>
 	<div id = "topbar">
