@@ -42,7 +42,7 @@
 				in the area of analog and digital systems, signal processing, machine learning and general purpose software. </p>
 				<p>If, after all, I happen to have caught your interest, don't hesitate to contact me for any opportunities, ideas or just a coffee and a chat. For more details, my CV is available for download.</p>
 			</div>
-			<div id="buttonsAbout">
+			<div class="buttonsAbout">
 				<button id="downloadCV">Download CV</button>
 				<button id="contactButton">Contact</button>
 			</div>
@@ -145,7 +145,11 @@
 		<div class="denoiserContent">
 			<div class "denoiserText">
 				<p>One of the projects I have been involved in is the development of an intelligent DSP algorithm that reduces the background noise behind speech signals while maintaining the quality of the message. This algorithm is based on the assumption that the speaker will pause talking during a 10 second time period.</p>
-				<p>A Texas Instrument DSP board was programmed in C to compute this algorithm. The program looked for the frequency components with the least magnitude for the last 10 seconds. It then substracted these components from the input signal. Further enhancements were implemented to increase the quality of the signal. For further information, please contact me.
+				<p>A Texas Instrument DSP board was programmed in C to compute this algorithm. The program looked for the frequency components with the least magnitude for the last 10 seconds. It then substracted these components from the input signal. Further enhancements were implemented to increase the quality of the signal. For further information, please contact me. Here is a sample for you to listen.
+			</div>
+			<div class="buttonsAbout">
+				<button id="noisyAudio">Noisy audio</button>
+				<button id="cleanAudio">Clean audio</button>
 			</div>
 		</div>
 	</div>
@@ -155,10 +159,30 @@
 			<div class="emcFigure">
 				<img src="images/emcWindows.jpg" alt="emcWindows.jpg">
 			</div>
-			<div class="emcText">
-				<p>As an intern at Airbus Earlier I developed an electromagnetic susceptibility test automated test software for Airbus. Susceptibility tests measure the vulnerability of the device to electro-magnetic emissions.</p>
-				<p>The software controlled a wide range of equipment such as antennas, signal generators, amplifiers and field probes. It generated the desired electric field for a specific frequency range in an anechoic chamber and returned measured data. I also developed a Win32 user interface to make the program easier to use.</p>
+			<div class="emcFigure2">
+				<div class="emcText">
+					<p>As an intern at Airbus I developed an electromagnetic susceptibility test software for Airbus. Susceptibility tests measure the vulnerability of the device to electro-magnetic emissions.</p>
+					<p>The software controlled a wide range of equipment such as antennas, signal generators, amplifiers and field probes. It generated the desired electric field for a specific frequency range in an anechoic chamber and returned measured data. I also developed a Win32 user interface to make the program easier to use.</p>
+					</div>
+					<button class="github" id="buttonEmc">See on Github</button>
 				</div>
+		</div>
+	</div>
+	<div class="gloveSection">
+		<style type="text/css">
+			.gloveSection{
+				background-image: url("images/articulatedGlove1.jpg");
+			}
+		</style>
+		<h2>Articulated Glove</h2>
+		<div class="gloveContent">
+			<div class="gloveFigure">
+				<div class="gloveText">
+					<p>As an intern at Airbus I developed an electromagnetic susceptibility test software for Airbus. Susceptibility tests measure the vulnerability of the device to electro-magnetic emissions.</p>
+					<p>The software controlled a wide range of equipment such as antennas, signal generators, amplifiers and field probes. It generated the desired electric field for a specific frequency range in an anechoic chamber and returned measured data. I also developed a Win32 user interface to make the program easier to use.</p>
+				</div>
+				<button class="github" id="buttonGlove">See on Github</button>
+			</div>
 		</div>
 	</div>
 	<div id = "topbar">
