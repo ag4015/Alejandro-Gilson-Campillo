@@ -8,6 +8,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Alegreya|Amiri|EB+Garamond" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Nunito|Open+Sans|Work+Sans" rel="stylesheet">
 	<script src="scripts/style.js" type="text/javascript"></script>
+	<script src="scripts/main.js" type="text/javascript"></script>
 	<style type="text/css">
 	@import url(http://weloveiconfonts.com/api/?family=fontawesome);
 
@@ -29,7 +30,7 @@
 			<h1>Alejandro Gilson Campillo</h1>
 		</figure>
 	</div>
-	<div class="aboutSection">
+	<div class="aboutSection" id="aboutAnchor">
 		<figure id="myFrame">
 			<img src="images/photoOfMe.jpg" alt="Alex photo" id="photoOfMe">
 		</figure>
@@ -43,12 +44,13 @@
 				<p>If, after all, I happen to have caught your interest, don't hesitate to contact me for any opportunities, ideas or just a coffee and a chat. For more details, my CV is available for download.</p>
 			</div>
 			<div class="buttonsAbout">
-				<button id="downloadCV">Download CV</button>
-				<button id="contactButton">Contact</button>
+				<button id="downloadCV" onclick="downloadURI()">Download CV
+				</button>
+				<button id="contactButton" onclick="gotoContact()">Contact</button>
 			</div>
 		</div>
 	</div>
-	<div class="myWorkSection">
+	<div class="myWorkSection" id="projectsAnchor">
 		<div class="upperWork">
 			<h2>My Projects</h2>
 			<h4><span class="fontawesome-quote-left" id = "leftQuote"></span>
@@ -59,20 +61,20 @@
 		</div>
 		<div class="lowerWork">
 			<div class="projects1">
-				<div class="project-1">
+				<div class="project-1" onclick="gotoEEBug()">
 					<span class="fontawesome-bolt"></span>
 					<h5>EEBug</h5>
 					<p>Intelligent motored device that follows a line with
 						 the use of an ATtiny microprocessor.</p>
 					</div>
-				<div class="project-2">
+				<div class="project-2" onclick="gotoWine()">
 					<span class="fontawesome-glass"></span>
 					<h5>Wine classifier</h5>
 					<p> A machine learning algorithm that grades the quality
 						of portuguese "vinho verde" wine.
 					</p>
 				</div>
-				<div class="project-3">
+				<div class="project-3" onclick="gotoDenoiser()">
 					<span class="fontawesome-headphones"></span>
 					<h5>Intelligent denoiser</h5>
 					<p>Intelligent DSP algorithm that analyzes audio and reduces
@@ -80,21 +82,21 @@
 				</div>
 			</div>
 			<div class="projects2">
-				<div class="project-4">
+				<div class="project-4" onclick="gotoEMC()">
 					<span class="fontawesome-rss"></span>
 					<h5>EMC test</h5>
 					<p>
 						Development of an automated electromagnetic susceptibility test for Airbus
 					</p>
 				</div>
-				<div class="project-5">
+				<div class="project-5" onclick="gotoGlove()">
 					<span class="fontawesome-medkit"></span>
 					<h5>Articulated glove</h5>
 					<p>Articulated glove for people with hand disabilities. Device to aid
 						patients with hand muscle weakness.
 					</p>
 				</div>
-				<div class="project-6">
+				<div class="project-6" onclick="gotoCTS()">
 					<span class="fontawesome-cogs"></span>
 					<h5>Crack tracking system</h5>
 					<p>Development of an automated material testing device for FAC Technologies
@@ -103,25 +105,26 @@
 			</div>
 		</div>
 	</div>
-	<div class="eebugSection">
-		<h2>EEbug</h2>
-		<div class="eebugContent">
-			<figure class="eebugFigure">
-				<img class="eebugImage" src="images/eebug.png" alt="eebugImage">
-			</figure>
-			<div class="eebugText">
-				<p>
-					This was my first year project as a student. This device uses an infrared
-					emitter and two infrared sensors to detect a painted line on the ground.
-					 The difference in reflection between the background color and the color
-					 of the line determines the position of the device. Finally, a microprocessor
-					uses this information to control the DC motors and follow the line.
-				</p>
-				<button class="github">See on Github</button>
+	<div class="gloveSection" id="gloveAnchor">
+		<style type="text/css">
+			.gloveSection{
+				background-image: url("images/Optimized-articulatedGlove1.jpg");
+			}
+		</style>
+		<div class="gloveCover">
+		<h2>Articulated Glove</h2>
+		<div class="gloveContent">
+			<div class="gloveFigure">
+				<div class="gloveText">
+					<p>In my second year as a student I lead a group of engineering students in the development of an articulated exoskeleton to aid people with hand disabilities. It involved the use of sensors, motors and data processing. The purpose of the device was to provide strength to the patient whenever he had an intent of moving his hand. Due to the achievements of this project we were awarded a second price for best project in our year.</p>
+					<p>Whenever the user wishes to move a finger downwards, the touch sensor detects it and the motors pull the fingers down. The finger would then go up with the use of elastic bands.</p>
+				</div>
+				<button class="github" id="buttonGlove"><a href="https://www.google.es">See on Github</a></button>
 			</div>
 		</div>
 	</div>
-	<div class="wineSection">
+	</div>
+	<div class="wineSection" id="wineAnchor">
 		<h2>Wine classifier</h2>
 		<div class="wineContent">
 			<figure class="wineFigure">
@@ -135,7 +138,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="denoiserSection">
+	<div class="denoiserSection" id="denoiserAnchor">
 		<style type="text/css">
 			.denoiserSection{
 				background-image: url("images/denoiser.jpg");
@@ -153,7 +156,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="emcSection">
+	<div class="emcSection" id="emcAnchor">
 		<h2>EMC test</h2>
 		<div class="emcContent">
 			<div class="emcFigure">
@@ -168,26 +171,25 @@
 				</div>
 		</div>
 	</div>
-	<div class="gloveSection">
-		<style type="text/css">
-			.gloveSection{
-				background-image: url("images/Optimized-articulatedGlove1.jpg");
-			}
-		</style>
-		<div class="gloveCover">
-		<h2>Articulated Glove</h2>
-		<div class="gloveContent">
-			<div class="gloveFigure">
-				<div class="gloveText">
-					<p>In my second year as a student I lead a group of engineering students in the development of an articulated exoskeleton to aid people with hand disabilities. It involved the use of sensors, motors and data processing. The purpose of the device was to provide strength to the patient whenever he had an intent of moving his hand. Due to the achievements of this project we were awarded a second price for best project in our year.</p>
-					<p>Whenever the user wishes to move a finger downwards, the touch sensor detects it and the motors pull the fingers down. The finger would then go up with the use of elastic bands.</p>
-				</div>
-				<button class="github" id="buttonGlove">See on Github</button>
+	<div class="eebugSection" id="eebugAnchor">
+		<h2>EEbug</h2>
+		<div class="eebugContent">
+			<figure class="eebugFigure">
+				<img class="eebugImage" src="images/eebug.png" alt="eebugImage">
+			</figure>
+			<div class="eebugText">
+				<p>
+					This was my first year project as a student. This device uses an infrared
+					emitter and two infrared sensors to detect a painted line on the ground.
+					 The difference in reflection between the background color and the color
+					 of the line determines the position of the device. Finally, a microprocessor
+					uses this information to control the DC motors and follow the line.
+				</p>
+				<button class="github">See on Github</button>
 			</div>
 		</div>
 	</div>
-	</div>
-	<div class="ctsSection">
+	<div class="ctsSection" id="ctsAnchor">
 		<style type="text/css">
 			.ctsSection{
 				background-image: url("images/crack.png");
@@ -203,16 +205,44 @@
 			</div>
 		</div>
 	</div>
-	<div class="timeline">
+	<div class="timeline" id="timelineAnchor">
+		<h2>Timeline</h2>
+		<img src="images/timelineVertical.jpg" alt="timeline.jpg">
+	</div>
+	<div class="contactSection" id="contactAnchor">
+		<h2>Contact me</h2>
+		<div class="contactContent">
+			<div class="contactDetails">
+				<div class="contactButton2" id="email">
+					<img src="images/mail.png" alt="mail.png">
+				</div>
+				<span id="email">alex.gilsoncampillo@gmail.com</span>
+			</div>
+			<div class="contactDetails">
+				<div class="contactButton2" id="linkedin">
+					<img src="images/linkedin.png" alt="linkedin.png">
+				</div>
+				<span id="linkedin">Add me</span>
+			</div>
+			<div class="contactDetails">
+				<div class="contactButton2" id="twitter">
+					<img src="images/twitter.png" alt="twitter.png">
+				</div>
+				<span id="twitter">Follow me</span>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<p>Alejandro Gilson Campillo - All rights reserved - 2018 </p>
 	</div>
 	<div id = "topbar">
 		<h3 class="myName">Alex Gilson </h3>
 		<ul>
-			<li><a href="#">Home</a></li>
-			<li><a href="#">About</a></li>
-			<li><a href="#">Projects</a></li>
-			<li><a href="#">Timeline</a></li>
-			<li><a href="#">Contact</a></li>
+			<li><a onclick="gotoHome()">Home</a></li>
+			<li><a onclick="gotoAbout()">About</a></li>
+			<li><a onclick="gotoProjects()">Projects</a></li>
+			<li><a onclick="gotoTimeline()">Timeline</a></li>
+			<li><a onclick="gotoContact()">Contact</a></li>
 		</ul>
 	</div>
 	<div id="topbarMobile">
