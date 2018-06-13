@@ -66,7 +66,7 @@ p{
 	position: fixed;
 	display: flex;
 	flex-direction: row;
-	justify-content:space-between;
+	justify-content:center;
   align-items: center;
   padding-left: 2vw;
   padding-right: 2vw;
@@ -450,16 +450,22 @@ p{
 	width: 68%;
 	margin-top: 5vh;
 }
-.github{
-	display: block;
-	text-align: center;
-	font-size: 20px;
-	height: 7vh;
-	color: black;
-	background-color: #e0db3f;
-	border: solid white;
+#eebugButton{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: #e9b704;
+	border: solid green;
 	border-radius: 10px;
-	cursor: pointer;
+	width: auto;
+	height: 6vh;
+	padding-left: 4vh;
+	padding-right: 4vh;
+}
+#eebugButton a{
+	color: black;
+	text-decoration: none;
 }
 .wineSection{
 	width: 100%;
@@ -577,13 +583,28 @@ p{
 	max-width: 100%;
 }
 #buttonEmc{
-	font-weight: normal;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding-left: 2vh;
+	padding-right: 2vh;
 	height: 7vh;
-	color: white;
-	margin-right: 2vw;
 	background-color: #22959b;
-	border: solid #22959b;
+	border: solid 22959b;
 	border-radius: 10px;
+	opacity: 1;
+	color: white;
+	text-decoration: none;
+}
+#buttonEmc a{
+	color: white;
+	font-weight: bold;
+	text-decoration: none;
+}
+#emcButton{
+	cursor: pointer;
+	color: white;
 }
 .gloveSection{
 	position: relative;
@@ -639,15 +660,22 @@ p{
 	font-weight: 900;
 }
 #buttonGlove{
-	font-weight: normal;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding-left: 2vh;
+	padding-right: 2vh;
 	height: 7vh;
-	color: white;
-	margin-right: 2vw;
-	margin-bottom: 3vh;
 	background-color: #491792;
 	border: solid white;
 	border-radius: 10px;
 	opacity: 1;
+}
+#buttonGlove a{
+	color: white;
+	font-weight: bold;
+	text-decoration: none;
 }
 .ctsSection{
 	display: flex;
@@ -762,8 +790,24 @@ p{
 	height: 15vh;
 	background-color: black;
 	color: white;
+}
+.footer p{
 	text-align: center;
 }
 #topbar a{
+	cursor: pointer;
+}
+#linkedin{
+	color: darkred;
+	text-decoration: none;
+}
+#twitter{
+	color: darkred;
+	text-decoration: none;
+}
+.ctsSection h2{
+	text-align: center;
+}
+#homeButton2{
 	cursor: pointer;
 }

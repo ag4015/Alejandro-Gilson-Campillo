@@ -119,7 +119,9 @@
 					<p>In my second year as a student I lead a group of engineering students in the development of an articulated exoskeleton to aid people with hand disabilities. It involved the use of sensors, motors and data processing. The purpose of the device was to provide strength to the patient whenever he had an intent of moving his hand. Due to the achievements of this project we were awarded a second price for best project in our year.</p>
 					<p>Whenever the user wishes to move a finger downwards, the touch sensor detects it and the motors pull the fingers down. The finger would then go up with the use of elastic bands.</p>
 				</div>
-				<button class="github" id="buttonGlove"><a target="_blank" href="https://www.w3schools.com/html/html_links.asp"></a>See on Github</button>
+				<div class="github" id="buttonGlove">
+				<a href="https://github.com/ag4015/articulated-glove" target="_blank">See on Github</a>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -150,10 +152,10 @@
 				<p>One of the projects I have been involved in is the development of an intelligent DSP algorithm that reduces the background noise behind speech signals while maintaining the quality of the message. This algorithm is based on the assumption that the speaker will pause talking during a 10 second time period.</p>
 				<p>A Texas Instrument DSP board was programmed in C to compute this algorithm. The program looked for the frequency components with the least magnitude for the last 10 seconds. It then substracted these components from the input signal. Further enhancements were implemented to increase the quality of the signal. For further information, please contact me. Here is a sample for you to listen.</p>
 			</div>
-			<div class="buttonsAbout">
+			<!-- <div class="buttonsAbout">
 				<button id="noisyAudio">Noisy audio</button>
 				<button id="cleanAudio">Clean audio</button>
-			</div>
+			</div> -->
 		</div>
 	</div>
 	<div class="emcSection" id="emcAnchor">
@@ -167,7 +169,8 @@
 					<p>As an intern at Airbus I developed an electromagnetic susceptibility test software for Airbus. Susceptibility tests measure the vulnerability of the device to electro-magnetic emissions.</p>
 					<p>The software controlled a wide range of equipment such as antennas, signal generators, amplifiers and field probes. It generated the desired electric field for a specific frequency range in an anechoic chamber and returned measured data. I also developed a Win32 user interface to make the program easier to use.</p>
 					</div>
-					<button class="github" id="buttonEmc">See on Github</button>
+					<div class="github"><a id="buttonEmc" href="https://github.com/ag4015/EMS-Test" target="_blank">See on Github</a>
+					</div>
 				</div>
 		</div>
 	</div>
@@ -185,7 +188,9 @@
 					 of the line determines the position of the device. Finally, a microprocessor
 					uses this information to control the DC motors and follow the line.
 				</p>
-				<button class="github">See on Github</button>
+			</div>
+			<div class="github" id="eebugButton">
+				<a href="https://github.com/ag4015/EEBug" target="_blank">See on github</a>
 			</div>
 		</div>
 	</div>
@@ -205,10 +210,6 @@
 			</div>
 		</div>
 	</div>
-	<div class="timeline" id="timelineAnchor">
-		<h2>Timeline</h2>
-		<img src="/images/timelineVertical.jpg" alt="timeline.jpg">
-	</div>
 	<div class="contactSection" id="contactAnchor">
 		<h2>Contact me</h2>
 		<div class="contactContent">
@@ -222,13 +223,15 @@
 				<div class="contactButton2" id="linkedin">
 					<img src="images/linkedin.png" alt="linkedin.png">
 				</div>
-				<span id="linkedin">Add me</span>
+				<a id="linkedin" href="https://www.linkedin.com/in/alejandro-gilson-campillo-705a0376/"
+				target="_blank">Add me</a>
 			</div>
 			<div class="contactDetails">
 				<div class="contactButton2" id="twitter">
 					<img src="images/twitter.png" alt="twitter.png">
 				</div>
-				<span id="twitter">Follow me</span>
+				<a id="twitter" href="https://twitter.com/AlexGilsonCampi"
+				target="_blank">Follow me</a>
 			</div>
 		</div>
 	</div>
@@ -241,13 +244,12 @@
 			<li><a onclick="gotoHome()">Home</a></li>
 			<li><a onclick="gotoAbout()">About</a></li>
 			<li><a onclick="gotoProjects()">Projects</a></li>
-			<li><a onclick="gotoTimeline()">Timeline</a></li>
 			<li><a onclick="gotoContact()">Contact</a></li>
 		</ul>
 	</div>
 	<div id="topbarMobile">
-		<span><a class="fontawesome-reorder"></a></span>
-		<span><a class="fontawesome-font"></a></span>
+		<!-- <span><a class="fontawesome-reorder"></a></span> -->
+		<span><a class="fontawesome-font" onclick="gotoHome()" id="homeButton2"></a></span>
 		<span class="nothing"></span>
 	</div>
 </body>
