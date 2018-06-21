@@ -80,69 +80,69 @@ p{
 }
 
 /*************Small Screen***************/
-	.body{
-		font-size: 10px;
-	}
-  #topbar{
-    visibility: hidden;
-  }
-  #topbarMobile{
-    visibility: visible;
-  }
-  #title h1{
-    font-size: 30px;
-  }
-  #title h2 {
-    font-size: 20px;
-  }
-	.aboutSection figure{
-		max-width: 70%;
-	}
-	#aboutRight{
-		max-width: 70%;
-	}
-	.eebugFigure{
-		max-width: : 70%;
-	}
-	.wineFigure{
-		max-width: 100%;
-		width: 70%;
-	}
-	.wineText{
-		width: 70%;
-	}
-	.denoiserSection{
-		height: auto;
-	}
-	.emcFigure{
-		width: 70%;
-	}
-	.emcFigure2{
-		width: 70%;
-	}
-	.gloveContent{
-		justify-content: center;
-	}
-	.gloveFigure{
-		justify-content: center;
-		width: 80vw;
-	}
-	.gloveSection{
-		background-position: center;
-	}
-	.gloveText{
-		width: 68vw;
-	}
-	.ctsFigure{
-		justify-content: center;
-		width: 80vw;
-	}
-	.ctsText{
-		width: 68vw;
-	}
-	.timeline img{
-		content: url("images/timelineVertical.jpg");
-	}
+.body{
+	font-size: 10px;
+}
+#topbar{
+  visibility: hidden;
+}
+#topbarMobile{
+  visibility: visible;
+}
+#title h1{
+  font-size: 30px;
+}
+#title h2 {
+  font-size: 20px;
+}
+.aboutSection figure{
+	max-width: 70%;
+}
+#aboutRight{
+	max-width: 70%;
+}
+.eebugFigure{
+	max-width: : 70%;
+}
+.wineFigure{
+	max-width: 100%;
+	width: 70%;
+}
+.wineText{
+	width: 70%;
+}
+.denoiserSection{
+	height: auto;
+}
+.emcFigure{
+	width: 70%;
+}
+.emcFigure2{
+	width: 70%;
+}
+.gloveContent{
+	justify-content: center;
+}
+.gloveFigure{
+	justify-content: center;
+	width: 80vw;
+}
+.gloveSection{
+	background-position: center;
+}
+.gloveText{
+	width: 68vw;
+}
+.ctsFigure{
+	justify-content: center;
+	width: 80vw;
+}
+.ctsText{
+	width: 68vw;
+}
+.timeline img{
+	content: url("images/timelineVertical.jpg");
+}
 
 .aboutSection{
 	position: relative;
