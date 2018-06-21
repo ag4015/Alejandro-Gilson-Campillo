@@ -14,7 +14,7 @@ function isMobileDevice() {
         )
  {
        document.write('<link rel="stylesheet" type="text/css" href="styles/mobile.css">');
-       var topbarMobile = document.querySelector('#topbarMobile')
+       var topbarMobile = document.querySelector('#topbarMobile');
        topbarMobile.style.height = (height/7 + "px");
  }
  else {
