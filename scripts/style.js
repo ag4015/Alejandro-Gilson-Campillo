@@ -13,14 +13,14 @@ function isMobileDevice() {
         navigator.userAgent.match(/Opera Mini/i)
         )
  {
-       document.write('<link rel="stylesheet" type="text/css" href="styles/mobile.css">');
-       var topbarMobile = document.querySelector('topbarMobile');
-       topbarMobile.style.height = (height/7 + "px");
+       // document.write('<link rel="stylesheet" type="text/css" href="styles/mobile.css">');
+       // var topbarMobile = document.querySelector('topbarMobile');
+       // topbarMobile.style.height = (height/7 + "px");
        // var everything = document.querySelector('html');
        // everything.style.fontSize = "30px";
  }
  else {
-       document.write('<link rel="stylesheet" type="text/css" href="styles/fixed.css">');
+       // document.write('<link rel="stylesheet" type="text/css" href="styles/fixed.css">');
  }
 }
 document.write('<link rel="stylesheet" type="text/css" href="styles/fixed.css">');
