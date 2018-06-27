@@ -16,10 +16,12 @@ function isMobileDevice() {
        document.write('<link rel="stylesheet" type="text/css" href="styles/mobile.css">');
        var topbarMobile = document.querySelector('topbarMobile');
        topbarMobile.style.height = (height/7 + "px");
+       // var everything = document.querySelector('html');
+       // everything.style.fontSize = "30px";
  }
  else {
        document.write('<link rel="stylesheet" type="text/css" href="styles/fixed.css">');
  }
 }
-
-isMobileDevice();
+document.write('<link rel="stylesheet" type="text/css" href="styles/fixed.css">');
+//isMobileDevice();

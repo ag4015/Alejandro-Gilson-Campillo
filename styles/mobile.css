@@ -1,5 +1,5 @@
 html{
-	font-size: 20px;
+	font-size: 30px;
 	font-family: 'Montserrat', serif;
 }
 body{
@@ -284,6 +284,7 @@ p{
 	justify-content: center;
 	align-items: center;
 	text-align: center;
+  width: auto;
 	margin-bottom: 5vh;
 	box-shadow: 10px 10px 5px Gainsboro;
 	background-color: white;
@@ -729,4 +730,8 @@ p{
 }
 #homeButton2{
 	cursor: pointer;
+}
+html{
+	font-size: 30px;
+	font-family: 'Montserrat', serif;
 }
