@@ -20,4 +20,4 @@ function isMobileDevice() {
  }
 }
 // document.write('<link rel="stylesheet" type="text/css" href="styles/fixed.css">');
-//isMobileDevice();
+isMobileDevice();
