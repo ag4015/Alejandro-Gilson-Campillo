@@ -345,7 +345,7 @@ p{
 	display: flex;
 	align-self: center;
 	flex-direction: row;
-	justify-content: space-evenly;
+	justify-content: space-around;
 	align-items: center;
 	flex-wrap: wrap;
 }
@@ -354,7 +354,7 @@ p{
 	display: flex;
 	flex-direction: row;
 	align-self: center;
-	justify-content: space-evenly;
+	justify-content: space-around;
 	align-items: center;
 	flex-wrap: wrap;
 	margin-bottom: 10vh;
