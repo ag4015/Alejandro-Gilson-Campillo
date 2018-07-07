@@ -230,7 +230,7 @@ p{
   display: flex;
 	width: 100%;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
 	margin-top: 3vh;
@@ -334,7 +334,7 @@ p{
 .lowerWork{
 	display: flex;
 	flex-direction: column;
-	justify-content: space-evenly;
+	justify-content: space-around;
 	align-items: center;
 	flex-wrap: wrap;
 	width: 100%;
@@ -482,7 +482,7 @@ p{
 	width: 100%;
 	display: flex;
 	flex-direction: row;
-	justify-content: space-evenly;
+	justify-content: space-around;
 	align-items: center;
 	flex-wrap: wrap;
 }
@@ -747,7 +747,7 @@ p{
 	height: 80vh;
 	display: flex;
 	flex-direction: row;
-	justify-content: space-evenly;
+	justify-content: space-around;
 	align-items: center;
 	flex-wrap: wrap;
 }
