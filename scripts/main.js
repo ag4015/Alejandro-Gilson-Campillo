@@ -32,7 +32,7 @@ function gotoEMC(){
   document.getElementById("emcAnchor").scrollIntoView({behavior: "smooth", inline: "start"});
 }
 function downloadURI() {
-  var uri = "content/CV Alejandro Gilson (11).pdf";
+  var uri = "content/CV Alejandro Gilson (12).pdf";
   var name = "CV Alejandro Gilson.pdf"
   var link = document.createElement("a");
   link.download = name;
